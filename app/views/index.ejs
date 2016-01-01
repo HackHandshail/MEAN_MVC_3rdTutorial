@@ -17,11 +17,16 @@
 		<a href="/register">Register</a>
 		<a href="/login">Login</a>
 	<% } %>
+	<script type="text/javascript">
+	    window.user = <%- user || 'null' %>;
+	</script>
 
     <img src="img/logo.jpg" alt="Hack Hands logo">
 <script type="text/javascript" src="/js/angular/angular.js></script>
 <script type="text/javascript" src="/js/example/example.client.module.js></script>
 <script type="text/javascript" src="/js/angular-route/angular-route.min.js"></script>
 <script type="text/javascript" src="/example/config/example.client.routes.js"></script>
+<script type="text/javascript" src="/users/users.client.module.js"></script>
+<script type="text/javascript" src="/users/services/authentication.client.service.js"></script>
 </body>
 </html>
