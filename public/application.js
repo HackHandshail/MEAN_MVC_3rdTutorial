@@ -6,6 +6,7 @@ angular.element(document).ready(function() {
 		});
 
 
+
 //for single page routing
 app.config(['$locationProvider', function($locationProvider) {
 		$locationProvider.hashPrefix('!');
